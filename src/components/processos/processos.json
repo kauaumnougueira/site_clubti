@@ -1,0 +1,27 @@
+[
+    {
+        "imgUrl":"/processos_medias/analise_media.png",
+        "titulo":"Análise e Planejamento",
+        "texto":"Vamos definir as necessidades e requisitos da sua empresa para orientar a elaboração do software."
+    },
+    {
+        "imgUrl":"/processos_medias/design_media.png",
+        "titulo":"Design",
+        "texto":"Desenvolvimento da experiência do usuário (UX), criação de wireframes e protótipos."
+    },
+    {
+        "imgUrl":"/processos_medias/desenvolvimento_media.png",
+        "titulo":"Desenvolvimento",
+        "texto":"Implementação da lógica de negócios no back-end, garantindo coesão com o design, e integração eficiente entre front-end e back-end."
+    },
+    {
+        "imgUrl":"/processos_medias/testes_media.png",
+        "titulo":"Testes",
+        "texto":"Realização de testes, incluindo testes de unidade e integração. Ajustes finais são feitos com base nos resultados para otimizar o produto."
+    },
+    {
+        "imgUrl":"/processos_medias/entrega_media.png",
+        "titulo":"Entrega e Implementação",
+        "texto":"Entrega final ao cliente e lançamento do produto, assegurando uma transição suave para uso prático."
+    }
+]

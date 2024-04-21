@@ -1,0 +1,38 @@
+[
+    {
+        "imgUrl": "/solucoes_medias/desenvolvimento_media.png",
+        "titulo": "Desenvolvimento de Software",
+        "texto": "Soluções sob medida para atender às necessidades da sua empresa, desde aplicativos Web até sistemas. Somos especialistas em Web, Mobile, Backend/APIs e Data Science.",
+        "tamanho": 1
+    },
+    {
+        "imgUrl":"/solucoes_medias/consultoria_media.png",
+        "titulo": "Consultoria em TI",
+        "texto": "Assessoria para orientar você na escolha das melhores estratégias e tecnologias para os objetivos do seu negócio.", 
+        "tamanho": 2
+    },
+    {
+        "imgUrl": "/solucoes_medias/seguranca_media.png",
+        "titulo": "Segurança Cibernética",
+        "texto": "Implementamos medidas de segurança para proteger sistemas, dados e redes contra ameaças cibernéticas, assegurando a integridade e confidencialidade das informações.",
+        "tamanho": 1
+    },
+    {
+        "imgUrl":"/solucoes_medias/integracao_media.png",
+        "titulo": "Integração de Sistemas",
+        "texto": "Dominamos a conectividade entre diferentes plataformas e sistemas, garantindo a interoperabilidade e otimizando processos internos.",
+        "tamanho": 2
+    },
+    {
+        "imgUrl": "/solucoes_medias/manutencao_media.png",
+        "titulo": "Manutenção e Suporte Técnico",
+        "texto": "Ofertamos serviços contínuos de manutenção, atualizações e suporte pós-implementação para garantir o desempenho e a confiabilidade das soluções fornecidas.",
+        "tamanho": 1
+    },
+    {
+        "imgUrl":"/solucoes_medias/gestao_media.png",
+        "titulo": "Gestão de Dados",
+        "texto": "Produzimos modelos de dados, gerenciamos e cuidamos do armazenamento de grandes volumes de dados.",
+        "tamanho": 2
+    }
+]

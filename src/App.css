@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  overflow-x: hidden;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #052232;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #18FECD;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #052232;  /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-button {
+  display: none; /* Oculta as setas de rolagem */
+}
+
+/*
+removendo bootstrap cliques
+*/
+
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active,
+.btn:hover,
+.btn:hover,
+.btn.disabled,
+.btn:disabled {
+  /* Defina os estilos que você deseja para esses estados, ou deixe-os vazios para remover os estilos padrão */
+  outline: none; /* Remove a borda de foco */
+  box-shadow: none; /* Remove a sombra de foco */
+  /* Outros estilos que você deseja remover */
+}
