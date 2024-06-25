@@ -1,6 +1,6 @@
-import logoImage from "../assets/img/emserh_logo.png";
 import styled from "styled-components";
-import * as S from "../assets/styleds/StyledComponents"
+import * as S from "../../assets/styleds/StyledComponents"
+import logos from "./logos.json"
 
 const Logo = styled.img`
   width: 210px;
@@ -21,8 +21,8 @@ const Fita = styled.div`
 const fitaEmserh = () => {
   return (
     <Fita className="row">
-      {[1, 2, 3, 4, 5].map((index) => (
-        <Logo key={index} src={logoImage} alt="Logo" />
+      {logos.map((logo, index) => (
+        <Logo key={index} src={logo.imgUrl} alt={logo.titulo} />
       ))}
     </Fita>
   );

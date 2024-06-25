@@ -1,0 +1,47 @@
+[
+    {
+        "comentario":
+            "consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "autor": "Davi da Silva",
+        "cargo": "CEO Escola Porta do Saber",
+        "image": "/logo192.png",
+        "rating": 4
+    },
+    {
+        "comentario": "Praesent condimentum efficitur velit non volutpat.",
+        "autor": "Aline Carvalho",
+        "cargo": "CEO Empresa cliente",
+        "image": "url-da-imagem",
+        "rating": 3
+    },
+    {
+        "comentario":
+            "consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "autor": "Davi da Silva",
+        "cargo": "CEO Escola Porta do Saber",
+        "image": "url-da-fotom",
+        "rating": 5
+    },
+    {
+        "comentario": "Praesent condimentum efficitur velit non volutpat.",
+        "autor": "Aline Carvalho",
+        "cargo": "CEO Empresa cliente",
+        "image": "url-da-imagem",
+        "rating": 5
+    },
+    {
+        "comentario":
+            "consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "autor": "Davi da Silva",
+        "cargo": "CEO Escola Porta do Saber",
+        "image": "url-da-fotom",
+        "rating": 5
+    },
+    {
+        "comentario": "Praesent condimentum efficitur velit non volutpat.",
+        "autor": "Aline Carvalho",
+        "cargo": "CEO Empresa cliente",
+        "image": "url-da-imagem",
+        "rating": 5
+    }
+]

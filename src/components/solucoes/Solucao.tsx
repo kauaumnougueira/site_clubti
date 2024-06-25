@@ -18,12 +18,12 @@ const Container = styled.div<ContainerProps>`
     user-select: none;
     cursor: pointer;
     margin: 20px 20px;
-    width: ${(props) => (props.tamanho == 1 ? `550px` : `450px`)};
+    width: ${(props) => (props.tamanho === 1 ? `550px` : `450px`)};
     height: 180px;
     background-color: ${S.colors.primario3};
     border-radius: 10px;
     display: flex;
-    box-shadow: 0px 4px 19px #052232;
+    box-shadow: 0px 2px 15px #052232;
 `;
 
 const Imagem = styled.div<ImagemProps>`

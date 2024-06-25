@@ -7,8 +7,8 @@ import * as B from "./StyledBannerComp";
 const Banner1 = () => {
     return (
         <B.Container backgroundImage={backgroundImage}>
-            <div className="row">
-                <div className="col-6">
+            <div className="grid grid-cols-2 w-full">
+                <div className="col-span-2 md:col-span-1">
                     <B.ColContainer>
                         <B.StyledText>
                             <span>Inovação em Software ao</span>
@@ -28,7 +28,7 @@ const Banner1 = () => {
                         </B.StyledText>
                     </B.ColContainer>
                 </div>
-                <div className="col-6">
+                <div className="col-span-2 md:col-span-1">
                     <img src={banner1Img} alt="" width="640px" height="533px" />
                 </div>
             </div>

@@ -36,10 +36,16 @@ const SolucoesContainer = styled.div`
     }
 `;
 
+const ClubtiText = styled.p`
+    @media min-width(1500 px) {
+        font-size: 30px;
+    }
+`
+
 const Banner3 = () => {
     return (
         <Banner3Container>
-            <div className="row" style={{ marginTop: "-42vh" }}>
+            <div className="row" style={{ marginTop: "-42vh" }} id="quem_somos">
                 <div
                     className="col-6"
                     style={{ position: "relative", height: "100%" }}
@@ -74,7 +80,7 @@ const Banner3 = () => {
                             <S.Neutra1Text fontSize="48px">
                                 <span>Sobre a ClubTi</span>
                             </S.Neutra1Text>
-                            <p
+                            <ClubtiText
                                 style={{
                                     fontSize: "20px",
                                     color: "#052232",
@@ -97,12 +103,12 @@ const Banner3 = () => {
                                 . Venha descobrir como a ClubTI transforma
                                 desafios em oportunidades, guiando-o para um
                                 futuro digital.
-                            </p>
+                            </ClubtiText>
                         </B.StyledText>
                     </B.ColContainer>
                 </div>
             </div>
-            <div className="row justify-content-between" style={{ margin: "auto 0" }}>
+            <div className="row justify-content-between" style={{ margin: "auto 0" }} id="solucoes">
                 <TextContainer className="col">
                     <B.ColContainer>
                         <B.StyledText>
