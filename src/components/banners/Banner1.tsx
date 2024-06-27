@@ -6,20 +6,18 @@ import * as B from "./StyledBannerComp";
 
 const Banner1 = () => {
     return (
-        <B.Container backgroundImage={backgroundImage}>
-            <div className="grid grid-cols-2 w-full">
-                <div className="col-span-2 md:col-span-1">
-                    <B.ColContainer>
-                        <B.StyledText>
-                            <span>Inovação em Software ao</span>
-                            <br />
-                            alcance do seu negócio!
-                            <S.Primario2Text>
+        <B.Container backgroundImage={backgroundImage} className="flex items-center justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 md:px-0 w-full max-w-6xl">
+                <div className="col-span-1 flex flex-col items-center md:items-start">
+                    <B.ColContainer className="text-center md:text-left flex flex-col items-center md:items-start">
+                        <B.StyledText className="flex flex-col items-center md:items-start">
+                           <p className="font-bold"> Inovação em Software ao
+                           alcance do seu negócio!</p>
+                            <S.Primario2Text className="mb-10">
                                 Maximize seu sucesso com a ClubTi
                             </S.Primario2Text>
                             <S.Button
-                                className="btn"
-                                width="228px"
+                                className="md:w-60 w-full"
                                 height="60px"
                                 fontSize="20px"
                             >
@@ -28,8 +26,8 @@ const Banner1 = () => {
                         </B.StyledText>
                     </B.ColContainer>
                 </div>
-                <div className="col-span-2 md:col-span-1">
-                    <img src={banner1Img} alt="" width="640px" height="533px" />
+                <div className="col-span-1 flex justify-center">
+                    <img src={banner1Img} alt="Banner" width="640" height="533" className="max-w-full h-auto" />
                 </div>
             </div>
         </B.Container>

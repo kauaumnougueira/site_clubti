@@ -18,31 +18,65 @@ export const Container = styled.div<ContainerProps>`
     background-image: url(${(props) => props.backgroundImage});
     background-size: cover;
     background-position: center;
+
+    @media (max-width: 480px) {
+        padding-bottom: 150px;
+    }
 `;
 
 export const StyledText = styled.h1`
     color: ${S.colors.neutra1};
-    font-size: 48px;
-    text-align: left; /* Justificação à esquerda */
+    font-size: 46px;
+    text-align: left;
+    line-height: 50px;
+
+    @media (max-width: 1024px) {
+        font-size: 40px; /* Ajuste para telas menores que 1024px */
+    }
+
+    @media (max-width: 768px) {
+        font-size: 32px; /* Ajuste para telas menores que 768px */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 40px; /* Ajuste para telas menores que 480px */
+        text-align: center;
+    }
 `;
 
 export const ColContainer = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 100%;
 `;
 
 export const StyledAccordion = styled.div`
     .accordion {
-        width: 600px;
-        border-radius: 10px; /* Adicionando border radius de 10px ao accordion */
-        overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do raio da borda */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando uma sombra sutil */
+        cursor: pointer;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
     .accordion-body {
-        text-align: left; /* Justificar o texto à esquerda dentro do corpo do accordion */
+        text-align: left;
     }
+
+    .accordion-button {
+        display: flex; /* Adiciona flex para alinhar texto e ícone */
+        align-items: center; /* Alinha o ícone com o texto */
+        justify-content: space-between; /* Espaça o ícone e o texto */
+        width: 100%;
+        padding: 16px; /* Ajusta o padding conforme necessário */
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: none;
+    }
+
     .accordion-button:focus p {
         color: ${S.colors.primario2};
     }
@@ -51,26 +85,17 @@ export const StyledAccordion = styled.div`
         border-left: 3px solid ${S.colors.primario1};
     }
 
-    .accordion-button {
-        box-shadow: none;
-        outline: none;
-        background-color: transparent;
-    }
-
-    /* CSS para o ícone */
-    .accordion-button:after {
-        content: ""; /* Adiciona um conteúdo vazio */
-        position: relative; /* Torna o elemento pai relativo */
-        display: inline-block; /* Exibe o conteúdo como um bloco */
+    .accordion-button-icon {
+        transition: transform 0.3s ease; /* Adiciona transição suave para a rotação */
         width: 40px;
         height: 40px;
+        background-size: cover;
         background-image: url(${ArrowAccordion});
-        background-size: cover; /* Ajusta o tamanho do ícone para cobrir o elemento */
-        background-repeat: no-repeat; /* Impede a repetição do ícone */
     }
-    .accordion-button:not(.collapsed)::after {
+
+    .accordion-button-icon.rotated {
+        transform: rotate(180deg); /* Rotaciona o ícone quando ativo */
         background-image: url(${ArrowAccordionOpen});
-        transform: rotate(0deg);
     }
 `;
 

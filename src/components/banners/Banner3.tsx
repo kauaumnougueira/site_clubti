@@ -1,23 +1,30 @@
 import React from "react";
 import styled from "styled-components";
-import grupo from "../../assets/img/grupo_de_pessoas_banner_2.jpeg";
-import bgGrupo from "../../assets/img/imagem_debaixo_banner_2.png";
+import bgGrupo from "../../assets/img/imgcolada.png";
 import * as B from "./StyledBannerComp";
 import * as S from "../../assets/styleds/StyledComponents";
 import { Solucoes } from "../solucoes/Solucoes";
 
 const Banner3Container = styled(B.Banner3Container)`
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 const TextContainer = styled.div`
     width: 38.5vw;
     padding: 0 20px;
     box-sizing: border-box;
+    z-index: 1; /* Garante que o texto esteja acima da imagem */
+
+    @media (max-width: 768px) {
+        width: 90vw; /* Ajusta a largura na versão mobile */
+    }
 `;
 
 const SolucoesContainer = styled.div`
-    width: 65vw;
+    width: 48vw;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -34,58 +41,76 @@ const SolucoesContainer = styled.div`
     &::-webkit-scrollbar-button {
         display: none; /* Oculta as setas de rolagem */
     }
+
+    @media (max-width: 768px) {
+        width: 90vw; /* Ajusta a largura na versão mobile */
+    }
 `;
 
 const ClubtiText = styled.p`
-    @media min-width(1500 px) {
+    text-align: justify;
+    line-height: 25px;
+    @media (max-width: 480px) {
         font-size: 30px;
+        line-height: 20px;
     }
-`
+`;
+
+const ImagesContainer = styled.div`
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        order: 2; /* Move a imagem abaixo do texto na versão mobile */
+        margin-top: 20px; /* Adiciona espaço entre o texto e a imagem */
+    }
+
+    img {
+        width: 70%;
+        height: auto;
+        margin: 10px 0;
+        
+        @media (max-width: 768px) {
+            width: 90%; /* Ajusta a largura da imagem na versão mobile */
+            margin-top: 0;
+        }
+    }
+`;
+
+const Img = styled.img`
+    width: 80%;
+    height: auto;
+
+    @media (max-width: 768px) {
+        width: 100%; 
+    }
+`;
 
 const Banner3 = () => {
     return (
-        <Banner3Container>
-            <div className="row" style={{ marginTop: "-42vh" }} id="quem_somos">
-                <div
-                    className="col-6"
-                    style={{ position: "relative", height: "100%" }}
-                >
-                    <img
+        <Banner3Container className="flex items-center justify-center -mt-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 md:px-0 w-full max-w-6xl -mt-80 md:-mt-60" id="quem_somos">
+                <ImagesContainer className="col-span-1 flex flex-col">
+                    <Img
                         src={bgGrupo}
                         alt="grupo_de_pessoas"
-                        style={{
-                            position: "absolute",
-                            width: "70%",
-                            height: "auto",
-                            top: "12%",
-                            right: "15%",
-                        }}
                     />
-                    <img
-                        src={grupo}
-                        alt="grupo_de_pessoas"
-                        style={{
-                            position: "absolute",
-                            width: "70%",
-                            height: "auto",
-                            top: "2%",
-                            left: "10%",
-                        }}
-                    />
-                </div>
+                </ImagesContainer>
 
-                <div className="col-6">
+                <div className="col-span-1 flex flex-col md:items-start">
                     <B.ColContainer>
                         <B.StyledText>
-                            <S.Neutra1Text fontSize="48px">
+                            <S.Neutra1Text fontSize="48px" className="font-bold">
                                 <span>Sobre a ClubTi</span>
                             </S.Neutra1Text>
                             <ClubtiText
+                            className="mt-10 md:mt-5 px-4 md:px-0"
                                 style={{
                                     fontSize: "20px",
                                     color: "#052232",
-                                    padding: "2% 5% 10% 0",
-                                    width: "90%",
                                 }}
                             >
                                 A ClubTI é mais do que uma empresa de
@@ -93,10 +118,10 @@ const Banner3 = () => {
                                 <strong>parceiros</strong> de confiança no
                                 caminho para o <strong>sucesso digital</strong>.
                                 Nossa abordagem inovadora se destaca na entrega
-                                de soluções{" "}
-                                <strong>sob medida, ágeis e eficientes</strong>{" "}
+                                de soluções
+                                <strong>sob medida, ágeis e eficientes</strong>
                                 para impulsionar o seu negócio, estamos
-                                comprometidos em oferecer a{" "}
+                                comprometidos em oferecer a
                                 <strong>
                                     excelência em desenvolvimento de software
                                 </strong>
@@ -108,14 +133,13 @@ const Banner3 = () => {
                     </B.ColContainer>
                 </div>
             </div>
-            <div className="row justify-content-between" style={{ margin: "auto 0" }} id="solucoes">
-                <TextContainer className="col">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 md:px-0 w-full max-w-6xl" style={{ margin: "auto 0" }} id="solucoes">
+                <TextContainer className="col-span-1 flex flex-col md:items-start">
                     <B.ColContainer>
                         <B.StyledText>
                             <S.Primario3Text
                                 fontSize="48px"
                                 style={{
-                                    maxWidth: "600px",
                                     borderLeft: "5px solid #8BFF8C",
                                     paddingLeft: "5vh",
                                 }}
@@ -126,7 +150,7 @@ const Banner3 = () => {
                         </B.StyledText>
                     </B.ColContainer>
                 </TextContainer>
-                <SolucoesContainer className="col">
+                <SolucoesContainer className="col-span-1 flex flex-col md:items-start">
                     <Solucoes />
                 </SolucoesContainer>
             </div>

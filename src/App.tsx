@@ -19,17 +19,19 @@ function App() {
             <div>
                 <Banner1 />
             </div>
-                <LogoRibbon />
+            <LogoRibbon />
             <div id="beneficios">
                 <Banner2 />
             </div>
             <div>
                 <Banner3 />
             </div>
+            {/*
             <div id="banner4">
                 <Banner4 />
             </div>
             <Banner5 />
+            */}
         </div>
     );
 }
