@@ -17,9 +17,8 @@ interface SolucoesProps extends ImagemProps, ContainerProps {
 const Container = styled.div<ContainerProps>`
     user-select: none;
     cursor: pointer;
-    width: 70vw;
-    height: 
-    400px;
+    width: 75vw;
+    height: 350px;
     background-color: ${S.colors.primario3};
     border-radius: 10px;
     display: inline-block; // Mantém os itens em linha
@@ -61,8 +60,8 @@ const Conteudo = styled.div`
     @media (max-width: 767px) {
         text-align: center; /* Centraliza o texto no mobile */
         p{
-            font-size: 20px;
-            line-height: 25px;
+            font-size: 18px;
+            line-height: 20px;
         }
     }
 `;
