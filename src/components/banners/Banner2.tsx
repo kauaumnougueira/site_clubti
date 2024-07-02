@@ -39,7 +39,7 @@ const Banner2 = () => {
                     </B.ColContainer>
                 </div>
                 <B.StyledAccordion className="col-span-1 mt-10">
-                    <div className="accordion mx-2 md:mx-0">
+                    <div className="accordion mx-2 md:mx-0 mb-32 md:mb-0">
                         {accordionItems.map((item, index) => (
                             <div key={index} className="border-b border-gray-200">
                                 <button

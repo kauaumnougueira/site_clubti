@@ -18,7 +18,8 @@ const Container = styled.div<ContainerProps>`
     user-select: none;
     cursor: pointer;
     width: 70vw;
-    height: 370px;
+    height: 
+    400px;
     background-color: ${S.colors.primario3};
     border-radius: 10px;
     display: inline-block; // Mantém os itens em linha

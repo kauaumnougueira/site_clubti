@@ -6,6 +6,7 @@ import styled from "styled-components";
 const SolucoesContainer = styled.div`
     display: flex;
     padding: 10px;
+    overflow-y: hidden;
 
     @media (min-width: 768px) {
         display: grid;
