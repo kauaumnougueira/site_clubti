@@ -19,9 +19,6 @@ export const Container = styled.div<ContainerProps>`
     background-size: cover;
     background-position: center;
 
-    @media (max-width: 480px) {
-        padding-bottom: 150px;
-    }
 `;
 
 export const StyledText = styled.h1`
@@ -41,6 +38,12 @@ export const StyledText = styled.h1`
     @media (max-width: 480px) {
         font-size: 40px; /* Ajuste para telas menores que 480px */
         text-align: center;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 25px; /* Ajuste para telas menores que 480px */
+        text-align: center;
+        line-height: 30px;
     }
 `;
 

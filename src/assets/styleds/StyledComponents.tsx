@@ -176,6 +176,11 @@ export const Neutra3Text = styled.p<FontProps>`
     font-size: ${(props) => props.fontSize || '16px'};
 `; 
 
+export const Neutra4Text = styled.p<FontProps>`
+    color: ${colors.neutra4};
+    font-size: ${(props) => props.fontSize || '16px'};
+`; 
+
 export const SecundarioText = styled.p<FontProps>`
     color: ${colors.secundario};
     font-size: ${(props) => props.fontSize || '20px'};

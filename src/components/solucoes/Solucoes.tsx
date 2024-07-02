@@ -1,43 +1,34 @@
-import desImg from "../../assets/img/solucoes_medias/desenvolvimento_media.png";
-import consImg from "../../assets/img/solucoes_medias/consultoria_media.png";
+import React from "react";
 import solucoesData from "./solucoes.json";
 import { Solucao } from "./Solucao";
+import styled from "styled-components";
+
+const SolucoesContainer = styled.div`
+    display: flex;
+    padding: 10px;
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // Grid para telas maiores
+        gap: 1rem;
+        padding: 0;
+    }
+`;
+
 
 const Solucoes = () => {
-    const linhaSuperior = solucoesData.filter(
-        (solucao) => solucao.tamanho === 1
-    );
-    const linhaInferior = solucoesData.filter(
-        (solucao) => solucao.tamanho === 2
-    );
-
     return (
-        <div> 
-            {/* Renderize os componentes Solucao para a linha superior */}
-            <div style={{ display: "flex" }}>
-                {linhaSuperior.map((solucao, index) => (
-                    <Solucao
-                        key={index}
-                        imgUrl={solucao.imgUrl}
-                        titulo={solucao.titulo}
-                        texto={solucao.texto}
-                        tamanho={solucao.tamanho}
-                    />
-                ))}
-            </div>
-            {/* Renderize os componentes Solucao para a linha inferior */}
-            <div style={{ display: "flex" }}>
-                {linhaInferior.map((solucao, index) => (
-                    <Solucao
-                        key={index}
-                        imgUrl={solucao.imgUrl}
-                        titulo={solucao.titulo}
-                        texto={solucao.texto}
-                        tamanho={solucao.tamanho}
-                    />
-                ))}
-            </div>
-        </div>
+        <SolucoesContainer>
+            {solucoesData.map((solucao, index) => (
+                <Solucao
+                    key={index}
+                    imgUrl={solucao.imgUrl}
+                    titulo={solucao.titulo}
+                    texto={solucao.texto}
+                    tamanho={solucao.tamanho}
+                />
+            ))}
+        </SolucoesContainer>
     );
 };
 

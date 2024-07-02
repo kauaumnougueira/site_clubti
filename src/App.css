@@ -12,3 +12,22 @@
   box-shadow: none; /* Remove a sombra de foco */
   /* Outros estilos que você deseja remover */
 }
+
+
+body::-webkit-scrollbar {
+  width: 20px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #052232;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #18FECD;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #052232;  /* creates padding around scroll thumb */
+}
+
+body::-webkit-scrollbar-button {
+  display: none; /* Oculta as setas de rolagem */
+}
