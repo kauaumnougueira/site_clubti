@@ -26,12 +26,10 @@ function App() {
             <div>
                 <Banner3 />
             </div>
-            {/*
             <div id="banner4">
                 <Banner4 />
             </div>
             <Banner5 />
-            */}
         </div>
     );
 }

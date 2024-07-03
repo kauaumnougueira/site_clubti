@@ -16,14 +16,13 @@ interface SolucoesProps extends ImagemProps, ContainerProps {
 
 const Container = styled.div<ContainerProps>`
     user-select: none;
-    cursor: pointer;
     width: 75vw;
-    height: 350px;
+    height: 400px;
     background-color: ${S.colors.primario3};
     border-radius: 10px;
     display: inline-block; // Mantém os itens em linha
     box-shadow: 0px 2px 15px #052232;
-    margin: 0 15px; // Adiciona margem entre os itens no mobile
+    margin: 10px 15px; // Adiciona margem entre os itens no mobile
    
 
     @media (min-width: 768px) {
@@ -43,7 +42,7 @@ const Imagem = styled.div<ImagemProps>`
 
     @media (max-width: 767px) {
         border-radius: 10px 10px 0 0;
-        height: 120px;
+        height: 150px;
         flex: none;
         width: 100%;
     }
@@ -61,7 +60,7 @@ const Conteudo = styled.div`
         text-align: center; /* Centraliza o texto no mobile */
         p{
             font-size: 18px;
-            line-height: 20px;
+            line-height: 25px;
         }
     }
 `;
