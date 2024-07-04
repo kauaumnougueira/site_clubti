@@ -14,10 +14,10 @@ const StartText = styled.div`
     }
     @media (max-width: 480px) {
         p{ 
-            font-size: 30px; /* Ajuste para telas menores que 480px */
+            font-size: 25px; /* Ajuste para telas menores que 480px */
             text-align: start;
             padding-left: 3vh;
-            line-height: 45px;
+            line-height: 35px;
             margin-left: 4vh;
             margin-right: 4vh;
         }
@@ -26,7 +26,7 @@ const StartText = styled.div`
 
 const Banner4 = () => {
     return (
-        <B.Container backgroundImage={backgroundImage} height="180vh">
+        <B.Container backgroundImage={backgroundImage} height="180vh" id="bg">
             <div className="flex flex-col md:flex-row-reverse flex-wrap md:flex-nowrap">
                 {/* Coluna do texto com ordem 1 em mobile e ordem 2 em telas maiores */}
                 <div className="order-1 w-full md:w-7/12 flex flex-col justify-between mt-4 md:mt-0">
