@@ -16,7 +16,7 @@ export const Container = styled.div<ContainerProps>`
     width: 100%;
     height: ${(props) => props.height || `100vh`};
     @media (max-width: 400px) {
-         height: ${(props) => `calc(${props.height} + 50vh)` || `100vh`};
+         height: ${(props) => `calc(${props.height} + 40vh)` || `100vh`};
     }
     background-image: url(${(props) => props.backgroundImage});
     background-size: cover;
