@@ -26,7 +26,7 @@ const StartText = styled.div`
 
 const Banner4 = () => {
     return (
-        <B.Container backgroundImage={backgroundImage} height="160vh">
+        <B.Container backgroundImage={backgroundImage} >
             <div className="flex flex-col md:flex-row-reverse flex-wrap md:flex-nowrap">
                 {/* Coluna do texto com ordem 1 em mobile e ordem 2 em telas maiores */}
                 <div className="order-1 w-full md:w-7/12 flex flex-col justify-between mt-4 md:mt-0">
