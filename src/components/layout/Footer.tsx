@@ -31,7 +31,7 @@ const Footer = () => {
                     </B.StartText>
 
                     {/* Nova div para o texto adicional */}
-                    <div className="mt-8 md:mt-24 2xl:mt-40 md:pr-10 text-center md:text-left">
+                    <div className="mt-8 md:mt-24 2xl:mt-40 md:pr-10 text-center md:text-left mt-10">
                         <S.Neutra1Text className="mb-5">
                             Estamos aqui para ouvir você e oferecer soluções feitas sob medida para sua empresa!
                         </S.Neutra1Text>
