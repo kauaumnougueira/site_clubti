@@ -17,7 +17,8 @@ export const Container = styled.div<ContainerProps>`
     flex-direction: column;
     width: 100%;
     height: ${(props) => props.height || `100vh`};
-    @media (max-width: 400px) {
+
+    @media (max-width: 480px) {
         height: ${(props) => props.mobileHeight || `calc(${props.height} + 40vh)` || `100vh`};
         background-image: url(${(props) => props.mobileBackgroundImage || props.backgroundImage});
     }

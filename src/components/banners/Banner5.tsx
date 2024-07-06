@@ -6,7 +6,7 @@ import Footer from "../layout/Footer";
 
 const Banner5 = () => {
     return (
-        <div>
+        <div style={{overflow: "hidden"}}>
             <div className="flex items-center justify-center mt-24"> {/* Utilizando flexbox para centralizar */}
                 <B.ColContainer className="flex flex-col items-center mr-auto md:ml-32">
                     <B.StartText>

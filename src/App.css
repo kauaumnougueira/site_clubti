@@ -43,3 +43,12 @@ html, body {
   display: flex;
   justify-content: center;
 }
+
+
+.gradient {
+  @media (max-width: 400px) {
+    background-color: #052232;
+  }
+
+  background: linear-gradient(to bottom, transparent 50%, #052232 50%);
+}
