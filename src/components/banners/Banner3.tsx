@@ -29,22 +29,6 @@ const SolucoesContainer = styled.div`
     }`
     ;
 
-const StartText = styled.div`
-    p{ 
-        font-size: 48px;
-        line-height: 50px;
-        border-left: 5px solid #8BFF8C;
-        padding-left: 5vh;
-    }
-    @media (max-width: 480px) {
-        p{ 
-            font-size: 35px; /* Ajuste para telas menores que 480px */
-            text-align: start;
-            padding-left: 3vh;
-        }
-    }
-`
-
 const Banner3 = () => {
     return (
         <div className="relative flex flex-col items-center mb-10">
@@ -73,13 +57,13 @@ const Banner3 = () => {
             {/* Seção "Soluções" */}
             <div className="mt-20 grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 md:px-0 w-full max-w-6xl my-auto" id="solucoes">
                 <div className="flex flex-col">
-                    <StartText>
+                    <B.StartText>
                         <S.Primario3Text
                             className="text-md flex items-start">
                             Soluções da ClubTI para impulsionar o seu
                             negócio
                         </S.Primario3Text>
-                    </StartText>
+                    </B.StartText>
                 </div>
 
                 <SolucoesContainer className="w-full md:w-[48vw] flex flex-nowrap overflow-x-auto">

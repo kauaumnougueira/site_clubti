@@ -5,7 +5,9 @@ import ArrowAccordionOpen from "../../assets/img/arrow_accordion_open.png";
 
 interface ContainerProps {
     backgroundImage: string;
-    height?: string; 
+    height?: string;
+    mobileHeight?: string;
+    mobileBackgroundImage?: string;
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -16,7 +18,8 @@ export const Container = styled.div<ContainerProps>`
     width: 100%;
     height: ${(props) => props.height || `100vh`};
     @media (max-width: 400px) {
-         height: ${(props) => `calc(${props.height} + 40vh)` || `100vh`};
+        height: ${(props) => props.mobileHeight || `calc(${props.height} + 40vh)` || `100vh`};
+        background-image: url(${(props) => props.mobileBackgroundImage || props.backgroundImage});
     }
     background-image: url(${(props) => props.backgroundImage});
     background-size: cover;
@@ -117,3 +120,22 @@ export const Banner3Container = styled.div`
     background-position: center;
     padding-top: 30vh;
 `;
+
+export const StartText = styled.div`
+    p{ 
+        font-size: 48px;
+        line-height: 50px;
+        border-left: 5px solid #8BFF8C;
+        padding-left: 5vh;
+    }
+    @media (max-width: 480px) {
+        p{ 
+            font-size: 25px; /* Ajuste para telas menores que 480px */
+            text-align: start;
+            padding-left: 3vh;
+            line-height: 35px;
+            margin-left: 4vh;
+            margin-right: 4vh;
+        }
+    }
+`

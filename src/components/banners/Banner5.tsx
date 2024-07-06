@@ -1,14 +1,15 @@
 import React from "react";
 import Comentarios from "../comentarios/Comentarios";
+import * as B from "../banners/StyledBannerComp"; // Preservando os estilos de banners se necessário
 import * as S from "../../assets/styleds/StyledComponents";
-import * as B from "../banners/StyledBannerComp";
+import Footer from "../layout/Footer";
 
 const Banner5 = () => {
     return (
         <div>
-            <div className="row" style={{margin: '100px 0', marginLeft: '-50%'}}>
-                <B.ColContainer>
-                    <B.StyledText>
+            <div className="flex items-center justify-center mt-24"> {/* Utilizando flexbox para centralizar */}
+                <B.ColContainer className="flex flex-col items-center mr-auto md:ml-32">
+                    <B.StartText>
                         <S.Primario3Text
                             fontSize="48px"
                             style={{
@@ -19,10 +20,11 @@ const Banner5 = () => {
                         >
                             Clientes que recomendam a ClubTI
                         </S.Primario3Text>
-                    </B.StyledText>
+                    </B.StartText>
                 </B.ColContainer>
             </div>
             <Comentarios />
+            <Footer />
         </div>
     );
 };

@@ -1,47 +1,44 @@
 [
     {
-        "comentario":
-            "consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "autor": "Davi da Silva",
-        "cargo": "CEO Escola Porta do Saber",
-        "image": "/logo192.png",
+        "comentario": "A equipe da ClubTI Solutions transformou nossa visão em realidade! O novo design do site aumentou nossa taxa de conversão em 40%.",
+        "autor": "Mariana Souza",
+        "cargo": "Gerente de Marketing, FitWell",
+        "image": "/imagens/mariana.png",
+        "rating": 5
+    },
+    {
+        "comentario": "Os desenvolvedores da ClubTI foram extremamente colaborativos e o resultado foi um site rápido e responsivo. Recomendo fortemente.",
+        "autor": "Lucas Pereira",
+        "cargo": "CTO, TechGear",
+        "image": "/imagens/lucas.png",
         "rating": 4
     },
     {
-        "comentario": "Praesent condimentum efficitur velit non volutpat.",
-        "autor": "Aline Carvalho",
-        "cargo": "CEO Empresa cliente",
-        "image": "url-da-imagem",
-        "rating": 3
-    },
-    {
-        "comentario":
-            "consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "autor": "Davi da Silva",
-        "cargo": "CEO Escola Porta do Saber",
-        "image": "url-da-fotom",
+        "comentario": "O suporte pós-lançamento é excelente. Eles resolveram todos os nossos problemas rapidamente e com grande profissionalismo.",
+        "autor": "Ana Martins",
+        "cargo": "CEO, EduInnovate",
+        "image": "/imagens/ana.png",
         "rating": 5
     },
     {
-        "comentario": "Praesent condimentum efficitur velit non volutpat.",
-        "autor": "Aline Carvalho",
-        "cargo": "CEO Empresa cliente",
-        "image": "url-da-imagem",
+        "comentario": "A experiência de usuário no nosso site melhorou drasticamente graças ao trabalho da ClubTI. A navegação está fluida e intuitiva.",
+        "autor": "Carlos Lima",
+        "cargo": "CIO, HealthHub",
+        "image": "/imagens/carlos.png",
         "rating": 5
     },
     {
-        "comentario":
-            "consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "autor": "Davi da Silva",
-        "cargo": "CEO Escola Porta do Saber",
-        "image": "url-da-fotom",
+        "comentario": "Fiquei impressionada com a agilidade e a qualidade do trabalho. Nosso site agora reflete a identidade da nossa marca perfeitamente.",
+        "autor": "Beatriz Oliveira",
+        "cargo": "Diretora de Operações, EcoWorld",
+        "image": "/imagens/beatriz.png",
         "rating": 5
     },
     {
-        "comentario": "Praesent condimentum efficitur velit non volutpat.",
-        "autor": "Aline Carvalho",
-        "cargo": "CEO Empresa cliente",
-        "image": "url-da-imagem",
+        "comentario": "A ClubTI Solutions é nossa parceira preferida para desenvolvimento web. Sempre entregam projetos dentro do prazo e acima das expectativas.",
+        "autor": "Felipe Andrade",
+        "cargo": "CEO, MarketPlus",
+        "image": "/imagens/felipe.png",
         "rating": 5
     }
 ]

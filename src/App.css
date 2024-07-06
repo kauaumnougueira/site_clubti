@@ -31,3 +31,15 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button {
   display: none; /* Oculta as setas de rolagem */
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+.carrossel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
