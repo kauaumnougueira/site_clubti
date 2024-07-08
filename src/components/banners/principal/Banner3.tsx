@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import bgGrupo from "../../assets/img/imgcolada.png";
-import * as B from "./StyledBannerComp";
-import * as S from "../../assets/styleds/StyledComponents";
-import { Solucoes } from "../solucoes/Solucoes";
+import bgGrupo from "../../../assets/img/imgcolada.png";
+import * as B from "../StyledBannerComp";
+import * as S from "../../../assets/styleds/StyledComponents";
+import { Solucoes } from "../../solucoes/Solucoes";
 
 const SolucoesContainer = styled.div`
     width: 48vw;
@@ -33,7 +33,7 @@ const Banner3 = () => {
     return (
         <div className="relative flex flex-col items-center mb-10">
             {/* Seção "Quem Somos" */}
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 md:px-0 w-full max-w-6xl mt-[-80px] md:mt-[-240px] xl:mt-[-320px]" id="quem_somos">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 md:px-0 w-full max-w-6xl mt-[-80px] md:mt-[-240px] xl:mt-[-320px]">
                 <div className="relative h-full flex flex-col items-center order-last md:order-none">
                     <img
                         src={bgGrupo}

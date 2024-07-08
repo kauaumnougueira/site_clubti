@@ -1,8 +1,8 @@
 import React from "react";
-import backgroundImage from "../../assets/img/gradient_bg_1.png";
-import banner1Img from "../../assets/img/banner1.png";
-import * as S from "../../assets/styleds/StyledComponents";
-import * as B from "./StyledBannerComp";
+import backgroundImage from "../../../assets/img/gradient_bg_1.png"
+import banner1Img from "../../../assets/img/pc_celular_cases.png";
+import * as S from "../../../assets/styleds/StyledComponents";
+import * as B from "../StyledBannerComp";
 
 const Banner1 = () => {
     return (
@@ -11,18 +11,10 @@ const Banner1 = () => {
                 <div className="col-span-1 flex flex-col items-center md:items-start">
                     <B.ColContainer className="text-center md:text-left flex flex-col items-center md:items-start">
                         <B.StyledText className="flex flex-col items-center md:items-start">
-                           <p className="font-bold"> Inovação em Software ao
-                           alcance do seu negócio!</p>
-                            <S.Primario2Text className="mb-10">
-                                Maximize seu sucesso com a ClubTi
-                            </S.Primario2Text>
-                            <S.Button
-                                className="md:w-60 w-full"
-                                height="60px"
-                                fontSize="20px"
-                            >
-                                Fale conosco
-                            </S.Button>
+                            <S.Primario1Text className="text-3xl">
+                                Conheça nossos cases
+                            </S.Primario1Text>
+                            <p className="font-semibold text-4xl"> Veja como transformamos desafios em histórias de sucesso</p>
                         </B.StyledText>
                     </B.ColContainer>
                 </div>

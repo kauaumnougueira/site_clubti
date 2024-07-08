@@ -4,11 +4,25 @@ import MenuIcon from "../../assets/img/menu.png"; // Ícone do menu
 import * as S from "./StyledHeader"; // Certifique-se de que este caminho está correto
 import { Button } from "../../assets/styleds/StyledComponents";
 
-const Header = () => {
+interface HeaderProps {
+    setPage: (page: string) => void;
+}
+
+const Header = ({ setPage }: HeaderProps) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    // Função para lidar com clique no item "cases"
+    const handleMenuClick = (section: string) => {
+        setIsOpen(false);
+        if (section === 'cases') {
+            setPage(section);
+        }else{
+            setPage('principal')
+        }
     };
 
     return (
@@ -30,8 +44,9 @@ const Header = () => {
                             <li key={section}>
                                 <S.NavLinkHeader
                                     href={`#${section}`}
+                                    data-section={section} 
                                     className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                                    onClick={() => setIsOpen(false)} // Fecha o menu ao clicar
+                                    onClick={() => handleMenuClick(section)}
                                 >
                                     {section.charAt(0).toUpperCase() + section.slice(1).replace('_', ' ')}
                                 </S.NavLinkHeader>
@@ -43,7 +58,7 @@ const Header = () => {
                                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 onClick={() => setIsOpen(false)}
                             >
-                                <Button  className={`text-white px-4 py-2 rounded ${isOpen && `outline bg-transparent` }`}>Entre em contato</Button>
+                                <Button className={`text-white px-4 py-2 rounded ${isOpen && `outline bg-transparent`}`}>Entre em contato</Button>
                             </S.NavLinkHeader>
                         </li>
                     </ul>

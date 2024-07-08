@@ -143,6 +143,7 @@ export const ButtonAtencao = styled.button<EstilosProps>`
 `;
 
 export const Primario1Text = styled.p<FontProps>`
+    font-size: ${(props) => props.fontSize || `20px`}
     margin-bottom: 10px;
     color: ${colors.primario1};
     font-weight:bold;

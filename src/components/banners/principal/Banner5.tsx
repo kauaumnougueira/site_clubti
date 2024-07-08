@@ -1,8 +1,8 @@
 import React from "react";
-import Comentarios from "../comentarios/Comentarios";
-import * as B from "../banners/StyledBannerComp"; // Preservando os estilos de banners se necessário
-import * as S from "../../assets/styleds/StyledComponents";
-import Footer from "../layout/Footer";
+import Comentarios from "../../comentarios/Comentarios";
+import * as B from "../StyledBannerComp"; // Preservando os estilos de banners se necessário
+import * as S from "../../../assets/styleds/StyledComponents";
+import Footer from "../../layout/Footer";
 
 const Banner5 = () => {
     return (
@@ -23,7 +23,9 @@ const Banner5 = () => {
                     </B.StartText>
                 </B.ColContainer>
             </div>
-            <Comentarios />
+            <div id='clientes'>
+                 <Comentarios />
+            </div>
             <Footer />
         </div>
     );

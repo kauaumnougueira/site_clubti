@@ -10,13 +10,13 @@ const Comentarios = () => {
     return Array.from({ length: comentarios.length }, (_, i) => i);
   });
 
-  const handleNext = () => {
+  const handleBack = () => {
     setPositionIndexes((prevIndexes) => {
       return prevIndexes.map((prevIndex) => (prevIndex + 1) % comentarios.length);
     });
   };
 
-  const handleBack = () => {
+  const handleNext = () => {
     setPositionIndexes((prevIndexes) => {
       return prevIndexes.map(
         (prevIndex) => (prevIndex + comentarios.length - 1) % comentarios.length
@@ -75,14 +75,14 @@ const Comentarios = () => {
       </div>
       <div className="flex flex-row gap-2 pb-4 md:pb-8">
         <button
-          className="text-white hover:text-black rounded-full py-2 px-4 text-sm sm:text-base"
+          className="text-white hover:text-black shadow-md rounded-full py-2 px-4 text-sm sm:text-base"
           onClick={handleBack}
           style={{backgroundColor: S.colors.primario2}}
         >
           Anterior
         </button>
         <button
-          className="text-white hover:text-black rounded-full py-2 px-4 text-sm sm:text-base"
+          className="text-white hover:text-black shadow-md rounded-full py-2 px-4 text-sm sm:text-base"
           onClick={handleNext}
           style={{backgroundColor: S.colors.primario2}}
         >

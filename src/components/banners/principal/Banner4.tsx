@@ -1,8 +1,8 @@
-import backgroundImage from "../../assets/img/gradient_bg_3.png";
-import * as S from "../../assets/styleds/StyledComponents";
-import * as B from "./StyledBannerComp";
-import processo1 from "../../assets/img/Processo1.png";
-import Processos from "../processos/Processos";
+import backgroundImage from "../../../assets/img/gradient_bg_3.png";
+import * as S from "../../../assets/styleds/StyledComponents";
+import * as B from "../StyledBannerComp";
+import processo1 from "../../../assets/img/Processo1.png";
+import Processos from "../../processos/Processos";
 import styled from "styled-components";
 
 

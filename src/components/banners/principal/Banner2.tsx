@@ -1,7 +1,7 @@
 import { useState } from "react";
-import backgroundImage from "../../assets/img/gradient_bg_2.png";
-import * as S from "../../assets/styleds/StyledComponents";
-import * as B from "./StyledBannerComp";
+import backgroundImage from "../../../assets/img/gradient_bg_2.png";
+import * as S from "../../../assets/styleds/StyledComponents";
+import * as B from "../StyledBannerComp";
 
 const Banner2 = () => {
     const [openIndex, setOpenIndex] = useState(null);
