@@ -1,4 +1,4 @@
-import processos from "../processos/processos.json";
+import processos from "./processos.json";
 import Processo from "./Processo";
 import linhaProcessos from "../../assets/img/line_processos.png";
 

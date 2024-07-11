@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Comentario from "./Comentario";
 import comentarios from "./comentarios.json";
-import * as S from "../../assets/styleds/StyledComponents";
+import * as S from "../../../../assets/styleds/StyledComponents";
 
 
 const Comentarios = () => {

@@ -3,7 +3,7 @@ import Banner2 from "../components/banners/principal/Banner2";
 import Banner3 from "../components/banners/principal/Banner3";
 import Banner4 from "../components/banners/principal/Banner4";
 import Banner5 from "../components/banners/principal/Banner5";
-import LogoRibbon from "../components/Faixa/LogoRibbon";
+import LogoRibbon from "../components/banners/principal/Faixa/LogoRibbon";
 
 const Principal = () => {
     return (

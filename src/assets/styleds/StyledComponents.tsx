@@ -16,6 +16,7 @@ export const colors = {
 
 interface FontProps {
     fontSize?: string,
+    fontWeight?:string,
 }
 interface EstilosProps extends FontProps {
     width?: string,
@@ -143,14 +144,12 @@ export const ButtonAtencao = styled.button<EstilosProps>`
 `;
 
 export const Primario1Text = styled.p<FontProps>`
-    font-size: ${(props) => props.fontSize || `20px`}
-    margin-bottom: 10px;
+    font-size: ${(props) => props.fontSize || `20px`};
     color: ${colors.primario1};
-    font-weight:bold;
+    font-weight: ${(props) => props.fontWeight || 'bold'};
 `;
 
 export const Primario2Text = styled.p<FontProps>`
-    margin-top: 20px;
     color: ${colors.primario2};
     font-size: ${(props) => props.fontSize || '24px'};
 `;
@@ -165,6 +164,7 @@ export const Primario3Text = styled.p<FontProps>`
 export const Neutra1Text = styled.p<FontProps>`
     color: ${colors.neutra1};
     font-size: ${(props) => props.fontSize || '16px'};
+    font-weight: ${(props) => props.fontWeight || 'normal'};
 `; 
 
 export const Neutra2Text = styled.p<FontProps>`

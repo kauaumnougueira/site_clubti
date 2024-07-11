@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import * as S from "../../assets/styleds/StyledComponents";
+import * as S from "../../../../assets/styleds/StyledComponents";
 import logos from "./logos.json";
 
 // Ajuste na animação para começar com logos já visíveis

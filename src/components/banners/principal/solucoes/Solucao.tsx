@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as S from "../../assets/styleds/StyledComponents";
+import * as S from "../../../../assets/styleds/StyledComponents";
 
 interface ImagemProps {
     imgUrl: string;

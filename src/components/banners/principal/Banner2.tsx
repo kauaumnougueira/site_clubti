@@ -16,7 +16,7 @@ const Banner2 = () => {
                 <div className="col-span-1 flex flex-col md:items-start">
                     <B.ColContainer>
                         <B.StyledText style={{ color: "#18FECD" }}>
-                            <S.Primario1Text>
+                            <S.Primario1Text fontSize="48px">
                                 Transformando desafios
                                 em soluções digitais
                             </S.Primario1Text>

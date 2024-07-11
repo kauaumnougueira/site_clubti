@@ -3,7 +3,7 @@ import styled from "styled-components";
 import bgGrupo from "../../../assets/img/imgcolada.png";
 import * as B from "../StyledBannerComp";
 import * as S from "../../../assets/styleds/StyledComponents";
-import { Solucoes } from "../../solucoes/Solucoes";
+import { Solucoes } from "./solucoes/Solucoes";
 
 const SolucoesContainer = styled.div`
     width: 48vw;

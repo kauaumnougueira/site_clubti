@@ -1,8 +1,8 @@
 import React from "react";
-import Comentarios from "../../comentarios/Comentarios";
+import Comentarios from "./comentarios/Comentarios";
 import * as B from "../StyledBannerComp"; // Preservando os estilos de banners se necessário
 import * as S from "../../../assets/styleds/StyledComponents";
-import Footer from "../../layout/Footer";
+import Footer from "./Footer";
 
 const Banner5 = () => {
     return (

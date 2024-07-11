@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import * as S from "../../assets/styleds/StyledComponents";
+import * as S from "../../../../assets/styleds/StyledComponents";
 
 interface ProcessoProps {
     imgUrl: string;
@@ -38,7 +38,7 @@ const Processo: React.FC<ProcessoProps> = ({ imgUrl, titulo, texto }) => {
             </ImageContainer>
             <TextContainer>
                 <S.SecundarioText className="text-xl">{titulo}</S.SecundarioText>
-                <S.Neutra1Text>{texto}</S.Neutra1Text>
+                <S.Neutra1Text className="pr-3">{texto}</S.Neutra1Text>
             </TextContainer>
         </Container>
     );
