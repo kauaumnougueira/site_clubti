@@ -34,14 +34,18 @@ const GridItem = styled.div<{ tamanho?: 1 | 2 | 3 }>`
     }
 `;
 
-const Cards: React.FC = () => {
+interface CardsProps{
+    setPage: (page:string) => void
+}
+
+const Cards: React.FC<CardsProps> = ({setPage}) => {
     return (
         <GridContainer>
             {cases.map((cardCase, index) => {
                 const tamanho = cardCase.tamanho as 1 | 2 | 3;
                 return (
                     <GridItem key={index} tamanho={tamanho}>
-                        <Card backgroundImage={cardCase.imagem} tamanho={tamanho} nome={cardCase.nome} descricao={cardCase.descricao}/>
+                        <Card backgroundImage={cardCase.imagem} tamanho={tamanho} nome={cardCase.nome} descricao={cardCase.descricao} setPage={setPage} route={cardCase.route}/>
                     </GridItem>
                 );
             })}

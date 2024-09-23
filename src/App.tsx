@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/layout/Header";
 import Principal from "./pages/Principal";
 import Cases from "./pages/Cases";
+import Case from "./components/banners/cases/cases_individuais/layout/Case"
 
 function App() {
     const [page, setPage] = useState(() => {
@@ -16,18 +17,17 @@ function App() {
         localStorage.setItem('page', page);
     }, [page]);
 
+
+
     return (
         <div className="App">
             <Header setPage={setPage} />
-            {page === 'principal' ? (
-                <div id="index">
-                    <Principal />
-                </div>
-            ) : (
-                <Cases />
-            )}
+            {page === 'principal' && <div id="index"> <Principal /> </div>}
+            {page === 'cases' && <Cases setPage={setPage} />}
+            {page === 'case' && <Case/>}
         </div>
     );
 }
 
 export default App;
+

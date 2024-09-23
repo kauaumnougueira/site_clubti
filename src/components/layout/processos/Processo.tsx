@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import * as S from "../../../../assets/styleds/StyledComponents";
+import * as S from "../../../assets/styleds/StyledComponents";
 
 interface ProcessoProps {
-    imgUrl: string;
+    imgUrl?: string;
     titulo: string;
     texto: string;
 }

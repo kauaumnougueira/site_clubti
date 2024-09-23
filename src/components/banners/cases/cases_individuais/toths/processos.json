@@ -1,0 +1,30 @@
+{
+    "nome": "Toths",
+    "banner": "cases/toths/banner2_toths.png",
+    "processos": [
+        {
+            "titulo": "Agenda",
+            "texto": "Ferramenta para organizar compromissos e eventos importantes, permitindo visualização e controle das atividades diárias e semanais."
+        },
+        {
+            "titulo": "Planejamento",
+            "texto": "Funcionalidade para definir metas, prazos e estratégias, facilitando o acompanhamento de projetos e objetivos a curto e longo prazo."
+        },
+        {
+            "titulo": "Administração",
+            "texto": "Controle geral das operações e processos administrativos, incluindo gestão de recursos e monitoramento de atividades operacionais."
+        },
+        {
+            "titulo": "Pedagógico",
+            "texto": "Gestão de processos educacionais, como organização de conteúdos, acompanhamento de desempenho e planejamento de atividades didáticas."
+        },
+        {
+            "titulo": "Recursos Humanos",
+            "texto": "Ferramenta para gerenciar o quadro de funcionários, incluindo recrutamento, treinamento, avaliação de desempenho e folha de pagamento."
+        },
+        {
+            "titulo": "Financeiro",
+            "texto": "Controle financeiro abrangendo orçamento, fluxo de caixa, contas a pagar e a receber, permitindo um acompanhamento detalhado das finanças."
+        }
+    ]
+}

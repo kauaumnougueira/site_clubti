@@ -28,7 +28,11 @@ const Footer = () => {
                     <S.Neutra1Text className="mb-5">
                         Estamos aqui para ouvir você e oferecer soluções feitas sob medida para sua empresa!
                     </S.Neutra1Text>
-                    <S.Button width="150px" height="50px">Entre em Contato</S.Button>
+                    <a
+                        href="https://wa.me/559891314044?text=Olá%2C%20bom%20dia!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20sistema.%20Poderia%20me%20ajudar%3F"
+                        target='_blank'>
+                        <S.Button width="150px" height="50px">Entre em Contato</S.Button>
+                    </a>
                 </div>
             </div>
         </FooterLayout>

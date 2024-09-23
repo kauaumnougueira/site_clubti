@@ -11,6 +11,8 @@ interface StyledProps {
 interface CardProps extends StyledProps {
     nome: string;
     descricao: string;
+    setPage: (page: string) => void;
+    route: string;
 }
 
 // Estilizar o CardContainer com base nas props 'tamanho' e 'backgroundImage'
@@ -34,7 +36,7 @@ const CardContainer = styled.div<StyledProps>`
     transition: transform 0.5s ease-in-out;
 
     &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
 
     @media (max-width: 480px){
@@ -73,7 +75,15 @@ const CardText = styled.div<StyledProps>`
 `;
 
 // Componente Card que recebe as props 'tamanho' e 'backgroundImage'
-const Card: React.FC<CardProps> = ({ tamanho = 1, backgroundImage, nome, descricao }) => {
+const Card: React.FC<CardProps> = ({ tamanho = 1, backgroundImage, nome, descricao, setPage, route }) => {
+
+    const router = () => {
+
+        setPage('case')
+        localStorage.setItem('route', route)
+
+    }
+
     return (
         <CardContainer tamanho={tamanho} backgroundImage={backgroundImage}>
             <CardText tamanho={tamanho}>
@@ -83,9 +93,11 @@ const Card: React.FC<CardProps> = ({ tamanho = 1, backgroundImage, nome, descric
                 <S.Primario2Text fontSize="20px" id="2">
                     {descricao}
                 </S.Primario2Text>
-                <S.Primario1Text fontSize="16px" id="3" className="mt-5" style={{ cursor: "pointer", userSelect: 'none' }}>
-                    Saiba mais 🡢
-                </S.Primario1Text>
+                <a href="#">
+                    <S.Primario1Text fontSize="16px" id="3" className="mt-5" style={{ cursor: "pointer", userSelect: 'none' }} onClick={() => router()}>
+                        Saiba mais 🡢
+                    </S.Primario1Text>
+                </a>
             </CardText>
         </CardContainer>
     );

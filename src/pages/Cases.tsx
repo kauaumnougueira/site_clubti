@@ -1,11 +1,15 @@
 import Banner1 from "../components/banners/cases/Banner1"
 import Banner2 from "../components/banners/cases/Banner2"
 
-const Cases = () => {
+interface CasesProps{
+    setPage: (page:string) => void
+}
+
+const Cases = ({setPage}:CasesProps) => {
     return (
         <>
             <Banner1/>
-            <Banner2/>
+            <Banner2 setPage={setPage}/>
         </>
     )
 }

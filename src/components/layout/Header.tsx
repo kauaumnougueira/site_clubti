@@ -20,8 +20,8 @@ const Header = ({ setPage }: HeaderProps) => {
         setIsOpen(false);
         if (section === 'cases') {
             setPage(section);
-        }else{
-            setPage('principal')
+        } else {
+            setPage('principal');
         }
     };
 
@@ -44,7 +44,7 @@ const Header = ({ setPage }: HeaderProps) => {
                             <li key={section}>
                                 <S.NavLinkHeader
                                     href={`#${section}`}
-                                    data-section={section} 
+                                    data-section={section}
                                     className="block py-2 px-3 text-gray-900 rounded hover:shadow-md md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                     onClick={() => handleMenuClick(section)}
                                 >
@@ -54,9 +54,9 @@ const Header = ({ setPage }: HeaderProps) => {
                         ))}
                         <li>
                             <S.NavLinkHeader
-                                href="#"
+                                href="https://wa.me/559891314044?text=Olá%2C%20bom%20dia!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20sistema.%20Poderia%20me%20ajudar%3F"
+                                target='_blank'
                                 className="block py-2 px-3 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                                onClick={() => setIsOpen(false)}
                             >
                                 <Button className={`text-white px-4 py-2 rounded ${isOpen && `outline bg-transparent`}`}>Entre em contato</Button>
                             </S.NavLinkHeader>

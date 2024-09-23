@@ -15,14 +15,15 @@ const Principal = () => {
             <div id="beneficios">
                 <Banner2 />
             </div>
-            <div  id="quem_somos">
+            <div id="quem_somos">
                 <Banner3 />
             </div>
             <div id="banner4">
                 <Banner4 />
             </div>
 
-            <Banner5 /></>
+            <Banner5 />
+        </>
     )
 }
 

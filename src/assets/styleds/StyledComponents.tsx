@@ -152,6 +152,7 @@ export const Primario1Text = styled.p<FontProps>`
 export const Primario2Text = styled.p<FontProps>`
     color: ${colors.primario2};
     font-size: ${(props) => props.fontSize || '24px'};
+    font-weight: ${(props) => props.fontWeight || 'normal'};
 `;
 
 export const Primario3Text = styled.p<FontProps>`

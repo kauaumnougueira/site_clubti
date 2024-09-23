@@ -3,24 +3,28 @@
         "imagem": "/cases/case_toths.png",
         "tamanho": 1,
         "nome": "Sistema Toths",
-        "descricao": "Modernizando a gestão escolar com nosso cliente Maktub."
+        "descricao": "Modernizando a gestão escolar com nosso cliente Maktub.",
+        "route": "toths"
     },
     {
         "imagem": "/cases/system_fake_1.png",
         "tamanho": 2,
         "nome": "Nome do Sistema",
-        "descricao": "Lorem ipsum dolor sit amet consecte tur adipisicing elit semper."
+        "descricao": "Lorem ipsum dolor sit amet consecte tur adipisicing elit semper.",
+        "route": ""
     },
     {
         "imagem": "/cases/case_toths.png",
         "tamanho": 2,
         "nome": "Nome do Sistema",
-        "descricao": "Lorem ipsum dolor sit amet consecte tur adipisicing elit semper."
+        "descricao": "Lorem ipsum dolor sit amet consecte tur adipisicing elit semper.",
+        "route": ""
     },
     {
         "imagem": "/cases/case_toths.png",
         "tamanho": 3,
         "nome": "Nome do Sistema",
-        "descricao": "Lorem ipsum dolor sit amet consecte tur adipisicing elit semper."
+        "descricao": "Lorem ipsum dolor sit amet consecte tur adipisicing elit semper.",
+        "route": ""
     }
 ]
