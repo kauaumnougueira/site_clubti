@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import quoteImage from "../../../../assets/img/comentario_icon.png"
 
 interface ComentarioProps {
   avatar: string;
@@ -86,7 +87,6 @@ const Comentario: React.FC<ComentarioProps> = ({
   active,
 }) => (
   <Card active={active}>
-    <Quote>“</Quote>
     <Stars>
       {Array.from({ length: rating }, (_, i) => (
         <span key={i}>⭐</span>

@@ -79,8 +79,10 @@ const Card: React.FC<CardProps> = ({ tamanho = 1, backgroundImage, nome, descric
 
     const router = () => {
 
-        setPage('case')
-        localStorage.setItem('route', route)
+        if (route != "") {
+            setPage('case')
+            localStorage.setItem('route', route)
+        }
 
     }
 
