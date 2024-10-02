@@ -4,7 +4,7 @@ import ComentarioIcon from "../../../../../assets/img/comentario_icon.png"
 
 const Banner4 = ({ comentario }: Banner4Props) => {
     return (
-        <div className="flex items-center justify-between px-24 py-10 bg-gradient-to-r from-teal-100 to-teal-200 rounded-lg">
+        <div className="flex items-center justify-between md:px-24 px-6 py-10 bg-gradient-to-r from-teal-100 to-teal-200 rounded-lg">
             {/* Seção de Texto */}
             <div className="max-w-md">
                 <img src={ComentarioIcon} alt="icone_comentario" />
