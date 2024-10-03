@@ -16,7 +16,7 @@ const ProcessoLayout: React.FC<BannerProps> = ({ img, children, processos, order
 
     return (
         <B.Container backgroundImage={backgroundImage} height="160vh" id="bg">
-            <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap">
+            <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap pt-36 md:pt-0">
                 {/* Coluna do texto */}
                 <div className={`md:order-1 w-full md:order-${orders[0]} md:w-7/12 flex flex-col justify-between mt-4 md:mt-0`}>
                     {children}
