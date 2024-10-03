@@ -30,7 +30,7 @@ const Banner2 = ({ sobre }: Banner2Props) => {
                     <img src={demoIcon} alt="demo_icon" className="mr-4 md:mr-6 w-8 h-8" />
                     <S.Primario3Text className="text-md md:text-lg">Dashboard de Gerenciamento Empresarial</S.Primario3Text>
                     <div className="w-full md:w-auto mt-4 flex justify-center md:justify-end">
-                        <S.Button width="150px" height="50px" className="w-40 h-12 md:w-44 md:h-14">
+                        <S.Button width="150px" height="50px" className="w-40 h-12 md:w-44 md:h-14 md:ml-5">
                             Acesse a demo
                         </S.Button>
                     </div>

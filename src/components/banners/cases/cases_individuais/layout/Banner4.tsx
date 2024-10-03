@@ -10,7 +10,7 @@ const Banner4 = ({ comentario }: Banner4Props) => {
                 <img src={ComentarioIcon} alt="icone_comentario" />
                 <S.Primario3Text fontSize="30px">{comentario.nome}</S.Primario3Text>
                 <S.Primario2Text fontSize="20px">{comentario.cargo}</S.Primario2Text>
-                <S.Neutra4Text fontSize="20px" className="mt-10 md:mt-5 px-4 md:px-0 text-justify text-lg md:text-base leading-[25px] md:leading-[20px]">
+                <S.Neutra4Text fontSize="20px" className="mt-10 md:mt-5 px-5 md:px-0 text-justify text-lg md:text-base leading-[25px] md:leading-[20px]">
                     {comentario.texto}
                 </S.Neutra4Text>
                 <div className="mt-10">
@@ -21,7 +21,7 @@ const Banner4 = ({ comentario }: Banner4Props) => {
             </div>
 
             {/* Imagem do Produto */}
-            <div className="w-1/2">
+            <div className="w-1/2 md:block hidden">
                 <img src={comentario.banner} alt="Demo do Produto" className="rounded-lg shadow-lg" />
             </div>
         </div>

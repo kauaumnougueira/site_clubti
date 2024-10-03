@@ -17,7 +17,7 @@ const Footer = ({ img }: FooterProps) => {
             {/* Seção do Texto */}
             <div className="flex flex-col justify-center items-center w-full rounded-2xl" style={{ background: `${S.colors.primario3}` }}>
                 <div className="flex flex-col justify-center items-center text-center md:text-left md:px-10 md:my-16 my-10 mx-10">
-                    <S.Neutra1Text className="mb-5 md:w-10/12 text-center" fontWeight="bold" fontSize="24px">
+                    <S.Neutra1Text className="mb-5 md:w-10/12 text-center text-5xl" fontWeight="bold" fontSize="24px">
                         Pronto para iniciar sua jornada de sucesso?
                         Entre em contato e transforme o seu negócio!
                     </S.Neutra1Text>

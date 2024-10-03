@@ -17,7 +17,7 @@ const Banner3 = ({processo} : Banner3Props) => {
                     style={{ width: "100%", maxWidth: "557px", height: "auto" }}
                 />
             }
-            order={'2-1'}
+            order={'1-2'}
         >
             <B.StartText>
                 <S.Neutra1Text
